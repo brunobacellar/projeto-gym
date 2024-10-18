@@ -2,6 +2,10 @@ body {
   background: linear-gradient(to right, #87ceeb, #317692);
   margin: 0;
   padding-bottom: 190px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .container-header {
