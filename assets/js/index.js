@@ -161,7 +161,7 @@ const diaOkReloadPag = () => {
       listDayOk.forEach((dayOk, ind) => {
         if (tagP.textContent == dayOk) {
           const imgOk = creatElement('img', 1, 'img-dia')
-          imgOk.src = '../assets/img/concluido.png'
+          imgOk.src = 'assets/img/concluido.png'
           tagP.appendChild(imgOk)
           tagP.classList.add('day-concluido')
           btnReiniciar.classList.remove('disabled')
@@ -176,7 +176,7 @@ const diaOkReloadPag = () => {
       listDayOkRest.forEach((dayOkRest, ind) => {
         if (tagP.textContent == dayOkRest) {
           const imgOk = creatElement('img', 1, 'img-dia')
-          imgOk.src = '../assets/img/concluido.png'
+          imgOk.src = 'assets/img/concluido.png'
           tagP.appendChild(imgOk)
           tagP.classList.add('day-concluido-rest')
           btnReiniciar.classList.remove('disabled')
@@ -324,13 +324,13 @@ const criandoTreino = () => {
 
       const divContainerDropDown = creatElement('div', 1, 'containerDropDownRest')
       const imgRest = creatElement('img', 1, 'imgRest')
-      imgRest.src = '../assets/img/rest.png'
+      imgRest.src = 'assets/img/rest.png'
       const captionRest = creatElement('p', 1, 'captionRest')
       captionRest.textContent = 'Hoje é dia de descanso!'
       const btnConfirmRest = creatElement('button', 1, 'btnConfirmRest')
       btnConfirmRest.textContent = 'Confirmar'
       const imgOk = creatElement('img', 1, 'img-dia')
-      imgOk.src = '../assets/img/concluido.png'
+      imgOk.src = 'assets/img/concluido.png'
       divContainerDropDown.appendChild(imgRest)
       divContainerDropDown.appendChild(captionRest)
       divContainerDropDown.appendChild(btnConfirmRest)
@@ -379,7 +379,7 @@ const criandoTreino = () => {
           divContainerDropDown.appendChild(divContainerMed)
           divContainerDropDown.style.display = 'none'
           const imgOk = creatElement('img', 1, 'img-dia')
-          imgOk.src = '../assets/img/concluido.png'
+          imgOk.src = 'assets/img/concluido.png'
 
           divContainerSmall.addEventListener('click', () => {
             if (divContainerSmall.classList.contains("cardComCheck", "::before")) {
@@ -433,7 +433,7 @@ const criandoTreino = () => {
           divContainerDropDown.appendChild(divContainerMed)
           divContainerDropDown.style.display = 'none'
           const imgOk = creatElement('img', 1, 'img-dia')
-          imgOk.src = '../assets/img/concluido.png'
+          imgOk.src = 'assets/img/concluido.png'
 
           divContainerSmall.addEventListener('click', () => {
             if (divContainerSmall.classList.contains("cardComCheck", "::before")) {
@@ -484,7 +484,7 @@ const criandoTreino = () => {
           divContainerDropDown.appendChild(divContainerMed)
           divContainerDropDown.style.display = 'none'
           const imgOk = creatElement('img', 1, 'img-dia')
-          imgOk.src = '../assets/img/concluido.png'
+          imgOk.src = 'assets/img/concluido.png'
 
           divContainerSmall.addEventListener('click', () => {
             if (divContainerSmall.classList.contains("cardComCheck", "::before")) {
@@ -539,7 +539,7 @@ const criandoTreino = () => {
           divContainerDropDown.appendChild(divContainerMed)
           divContainerDropDown.style.display = 'none'
           const imgOk = creatElement('img', 1, 'img-dia')
-          imgOk.src = '../assets/img/concluido.png'
+          imgOk.src = 'assets/img/concluido.png'
 
           divContainerSmall.addEventListener('click', () => {
             if (divContainerSmall.classList.contains("cardComCheck", "::before")) {
@@ -590,7 +590,7 @@ const criandoTreino = () => {
           divContainerDropDown.appendChild(divContainerMed)
           divContainerDropDown.style.display = 'none'
           const imgOk = creatElement('img', 1, 'img-dia')
-          imgOk.src = '../assets/img/concluido.png'
+          imgOk.src = 'assets/img/concluido.png'
 
           divContainerSmall.addEventListener('click', () => {
             if (divContainerSmall.classList.contains("cardComCheck", "::before")) {
@@ -641,7 +641,7 @@ const criandoTreino = () => {
           divContainerDropDown.appendChild(divContainerMed)
           divContainerDropDown.style.display = 'none'
           const imgOk = creatElement('img', 1, 'img-dia')
-          imgOk.src = '../assets/img/concluido.png'
+          imgOk.src = 'assets/img/concluido.png'
 
           divContainerSmall.addEventListener('click', () => {
             if (divContainerSmall.classList.contains("cardComCheck", "::before")) {
@@ -696,7 +696,7 @@ const criandoTreino = () => {
           divContainerDropDown.appendChild(divContainerMed)
           divContainerDropDown.style.display = 'none'
           const imgOk = creatElement('img', 1, 'img-dia')
-          imgOk.src = '../assets/img/concluido.png'
+          imgOk.src = 'assets/img/concluido.png'
 
           divContainerSmall.addEventListener('click', () => {
             if (divContainerSmall.classList.contains("cardComCheck", "::before")) {
@@ -747,7 +747,7 @@ const criandoTreino = () => {
           divContainerDropDown.appendChild(divContainerMed)
           divContainerDropDown.style.display = 'none'
           const imgOk = creatElement('img', 1, 'img-dia')
-          imgOk.src = '../assets/img/concluido.png'
+          imgOk.src = 'assets/img/concluido.png'
 
           divContainerSmall.addEventListener('click', () => {
             if (divContainerSmall.classList.contains("cardComCheck", "::before")) {
@@ -798,7 +798,7 @@ const criandoTreino = () => {
           divContainerDropDown.appendChild(divContainerMed)
           divContainerDropDown.style.display = 'none'
           const imgOk = creatElement('img', 1, 'img-dia')
-          imgOk.src = '../assets/img/concluido.png'
+          imgOk.src = 'assets/img/concluido.png'
 
           divContainerSmall.addEventListener('click', () => {
             if (divContainerSmall.classList.contains("cardComCheck", "::before")) {
@@ -849,7 +849,7 @@ const criandoTreino = () => {
           divContainerDropDown.appendChild(divContainerMed)
           divContainerDropDown.style.display = 'none'
           const imgOk = creatElement('img', 1, 'img-dia')
-          imgOk.src = '../assets/img/concluido.png'
+          imgOk.src = 'assets/img/concluido.png'
 
           divContainerSmall.addEventListener('click', () => {
             if (divContainerSmall.classList.contains("cardComCheck", "::before")) {
