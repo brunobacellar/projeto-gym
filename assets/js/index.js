@@ -674,7 +674,7 @@ const criandoTreino = () => {
         const divTesteira = creatElement('div', 1, 'divTesteira')
         divTesteira.textContent = `${diaTreino[1][0].charAt(0).toUpperCase() + diaTreino[1][0].slice(1)}`
         divContainerDropDown.appendChild(divTesteira)
-        const lengthCheck = diaTreino[2][0].length + diaTreino[2][1].length + diaTreino[2][2].length
+        const lengthCheck = diaTreino[2][0].length + diaTreino[2][1].length + diaTreino[2][2].length + diaTreino[2][3].length
         diaTreino[2][0].forEach((element, ind) => {
           
           const divContainerMed = creatElement('div', 1, 'divContainerMed')
