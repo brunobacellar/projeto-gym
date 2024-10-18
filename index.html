@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style-padrao.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <title>Treino</title>
+</head>
+<body>
+  <div class="div-blur">
+    
+    <div class="container-header-index">
+      <h1 class="user">Olá, Usuário</h1>
+      <h2 class="msg-user">Construa seu treino personalizado</h2>
+    </div>
+
+    <div class="container-info">
+      <img onclick="clickInfo()" class="img-info" src="assets/img/info2.png">
+      <div class="div-info">
+        <span class="info">• Selecione o <strong>dia da semana um a um</strong> para montar seu treino personalizado, ao final, o treino ficará <strong>disponível para vizualização</strong>.
+        </span>
+      </div>
+    </div>
+    
+    <div class="container-semana">
+      
+      <div class="container-dia segunda">
+        <p onclick="clickDia('segunda-feira')" class="dia seg">Segunda-Feira</p>
+      </div>
+      
+      <div class="container-dia terça">
+        <p onclick="clickDia('terça-feira')" class="dia ter day-disabled">Terça-Feira</p>
+      </div>
+      
+      <div class="container-dia quarta">
+        <p onclick="clickDia('quarta-feira')" class="dia qua day-disabled">Quarta-Feira</p>
+      </div>
+      
+      <div class="container-dia quinta">
+        <p onclick="clickDia('quinta-feira')" class="dia qui day-disabled">Quinta-Feira</p>
+      </div>
+      
+      <div class="container-dia sexta">
+        <p onclick="clickDia('sexta-feira')" class="dia sex day-disabled">Sexta-Feira</p>
+      </div>
+      
+      <div class="container-dia sábado">
+        <p onclick="clickDia('sábado')" class="dia sab day-disabled">Sábado</p>
+      </div>
+      
+      <div class="container-dia domingo">
+        <p onclick="clickDia('domingo')" class="dia dom day-disabled">Domingo</p>
+      </div>
+      
+    </div>
+    
+    
+    <div class="container">
+      
+      <div class="containerCard">
+        
+        
+      </div>
+      
+    </div>
+
+    <div class="menu-rodape">
+      
+      <div onclick="clickReiniciarSemana()" id="btnReiniciar" class="div-btn-rodape-desfazer disabled">
+        <img src="assets/img/desfazer.png" class="desfazer">
+        <div class="btn-rodape btn-save">Reiniciar<br>Semana</div>
+      </div>
+
+      <div onclick="clickDesfazerTreino()" id="btnDesfazer" class="div-btn-rodape-desfazer">
+        <img src="assets/img/desfazer.png" class="desfazer">
+        <div class="btn-rodape btn-save">Desfazer<br>Treino</div>
+      </div>
+
+    </div>
+  
+  </div>
+  
+  <div class="container-login">
+    
+    <h1 class="h1-login">Seja bem-vindo seu<br> <span class="frango">Frango do Car@lho!</span></h1>
+    <h2 class="h2-login">Está na hora de mudar de vida!</h2>
+    <input class="name" placeholder="Digite aqui seu nome" type="name">
+    <div class="div-checkbox">
+      <input class="checked" type="checkbox">
+      <span class="termo">Eu aceito que sou um frango de merd@ e quero mudar isso!</span>
+    </div>
+    <button onclick="clicandoBtnConfirmar()" class="btn-confirmar btn-confirmar-disabled">Confirmar</button>
+    <p class="termo-aceite">Aceite o termo para continuar.</p>
+    
+  </div>
+
+  <div class="container-finish-week">
+    <img src="assets/img/muscle.png" alt="Great Work" class="img-finish-week">
+    <p class="caption-finish-week">Treino Semanal Finalizado<br> com Sucesso!</p>
+    <button onclick="clickBtnFinishWeek()" class="btn-finish-week">Confirmar</button>
+  </div>
+  
+  <script src="assets/js/index.js"></script>
+</body>
+</html>

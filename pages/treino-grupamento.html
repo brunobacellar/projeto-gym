@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style-padrao.css">
+  <link rel="stylesheet" href="../assets/css/style-treino-grupamento.css">
+  <title>Montando Treino 2</title>
+</head>
+<body>
+  <div class="container-header">
+    <div onclick="clickBtnBack()" class="btn-back"><</div>
+    <hr class="linha">
+    <h1>Grupamentos Musculares</h1>
+  </div>
+  
+  <div class="container-info">
+    <img onclick="clickInfo()" class="img-info" src="../assets/img/info2.png">
+    <div class="div-info">
+      <span class="info">• Escolha um grupamento muscular para definir os exercícios que deseja selecionar.<br><strong>(Pode ser mais de um no dia)</strong>,<br>• Clique no botão <strong>descanso</strong>, caso você não deseje treinar neste dia.<br>• Ao concluir a seleção, o botão de <strong>Salvar Treino</strong> irá habilitar.
+      </span>
+    </div>
+  </div>
+  <div class="container">
+    <p onclick="clickGrupo('peitoral')" class="peitoral grupo">Peitoral</p>
+    <p onclick="clickGrupo('costas')" class="costas grupo">Costas</p>
+    <p onclick="clickGrupo('ombro')" class="ombro grupo">Ombro</p>
+    <p onclick="clickGrupo('bíceps')" class="biceps grupo">Bíceps</p>
+    <p onclick="clickGrupo('tríceps')" class="triceps grupo">Tríceps</p>
+    <p onclick="clickGrupo('quadríceps')" class="quadriceps grupo">Quadríceps</p>
+    <p onclick="clickGrupo('posterior')" class="posterior grupo">Posterior</p>
+    <p onclick="clickGrupo('panturrilha')" class="panturrilha grupo">Panturrilha</p>
+    <p onclick="clickGrupo('glúteos')" class="gluteos grupo">Glúteos</p>
+    <p onclick="clickGrupo('abdômem')" class="abdomem grupo">Abdômem</p>
+  </div>
+
+  <div class="menu-rodape">
+    
+    <div onclick="rest()" id="rest" class="div-btn-rodape">
+      <img src="../assets/img/rest.png" class="rest">
+      <div class="btn-rodape btn-save">Descanso</div>
+    </div>
+    <div onclick="salvarTreino()" id="btnSave" class="div-btn-rodape disabled">
+      <img src="../assets/img/approved.png" class="save">
+      <div class="btn-rodape btn-save">Salvar Treino</div>
+    </div>
+
+  </div>
+  
+  <script src="../assets/js/treino-grupamento.js"></script>
+</body>
+</html>

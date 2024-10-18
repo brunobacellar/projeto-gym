@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style-padrao.css">
+  <link rel="stylesheet" href="../assets/css/style-padrao-cards.css">
+  <link rel="stylesheet" href="../assets/css/style-exercicios.css">
+  <title>Exercícios Peitoral</title>
+</head>
+<body>
+  <div class="container-header">
+    <div onclick="clickBtnBack()" class="btn-back"><</div>
+    <hr class="linha">
+    <h1>Exercícios Peitoral</h1>
+  </div>
+  <div class="container-info">
+    <img onclick="clickInfo()" class="img-info" src="../assets/img/info2.png">
+    <div class="div-info">
+      <p class="info">• Selecione o Treino<br>• Escolha quantidade de <strong>Séries e Repetições e Confirme</strong>.<br>• Caso tenha selecionado o treino errado, desfaça clicando no botão de <strong>Desfazer</strong>.<br><strong>Obs:</strong> O botão de <strong>Salvar Treino</strong> só ficará ativo quando for selecionado de <strong>3 a 7 exercícios!</strong>
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    
+    <!-- CARD1 -->
+    <div class="containerCard">
+      <div class="cardStyle card1 efeitoCard" onclick="selectCard(1)">
+        <img class="imgStyle imgCardC1" src="../assets/exercicios-peito/crucifixo-declinado-halter.gif">
+        <p class="caption cap1">Crucifixo Declinado (Halter)</p>
+      </div>
+      <div class="container3">
+        <input class="inputStyle inputS1" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(1)">
+        <div class="dropDownStyle dropDownS1">
+          <div class="item" id="itemS1-1" onclick="choiceS(1, 1)">3 Séries</div>
+          <div class="item" id="itemS1-2" onclick="choiceS(2, 1)">4 Séries</div>
+          <div class="item" id="itemS1-3" onclick="choiceS(3, 1)">5 Séries</div>
+          <div class="item" id="itemS1-4" onclick="choiceS(4, 1)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR1" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(1)">
+        <div class="dropDownStyle dropDownR1">
+          <div class="item" id="itemR1-1" onclick="choiceR(1, 1)">6 a 8 reps</div>
+          <div class="item" id="itemR1-2" onclick="choiceR(2, 1)">8 a 10 reps</div>
+          <div class="item" id="itemR1-3" onclick="choiceR(3, 1)">10 a 12 reps</div>
+          <div class="item" id="itemR1-4" onclick="choiceR(4, 1)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(1)" class="styleDesfazer divDesfazer1">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(1)" class="btnStyle btn1 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD2 -->
+    <div class="containerCard">
+      <div class="cardStyle card2 efeitoCard" onclick="selectCard(2)">
+        <img class="imgStyle imgCardC2" src="../assets/exercicios-peito/crucifixo-inclinado-cabo.gif">
+        <p class="caption cap2">Crucifixo Inclinado (Cabo)</p>
+      </div>
+      <div class="container3">
+        <input class="inputStyle inputS2" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(2)">
+        <div class="dropDownStyle dropDownS2">
+          <div class="item" id="itemS2-1" onclick="choiceS(1, 2)">3 Séries</div>
+          <div class="item" id="itemS2-2" onclick="choiceS(2, 2)">4 Séries</div>
+          <div class="item" id="itemS2-3" onclick="choiceS(3, 2)">5 Séries</div>
+          <div class="item" id="itemS2-4" onclick="choiceS(4, 2)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR2" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(2)">
+        <div class="dropDownStyle dropDownR2">
+          <div class="item" id="itemR2-1" onclick="choiceR(1, 2)">6 a 8 reps</div>
+          <div class="item" id="itemR2-2" onclick="choiceR(2, 2)">8 a 10 reps</div>
+          <div class="item" id="itemR2-3" onclick="choiceR(3, 2)">10 a 12 reps</div>
+          <div class="item" id="itemR2-4" onclick="choiceR(4, 2)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(2)" class="styleDesfazer divDesfazer2">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(2)" class="btnStyle btn2 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD3 -->
+    <div class="containerCard">
+      <div class="cardStyle card3 efeitoCard" onclick="selectCard(3)">
+        <img class="imgStyle imgCardC3" src="../assets/exercicios-peito/crucifixo-inclinado-halter.gif">
+        <p class="caption cap3">Crucifixo Inclinado (Halter)</p>
+      </div>
+      <div class="container3">
+        <input class="inputStyle inputS3" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(3)">
+        <div class="dropDownStyle dropDownS3">
+          <div class="item" id="itemS3-1" onclick="choiceS(1, 3)">3 Séries</div>
+          <div class="item" id="itemS3-2" onclick="choiceS(2, 3)">4 Séries</div>
+          <div class="item" id="itemS3-3" onclick="choiceS(3, 3)">5 Séries</div>
+          <div class="item" id="itemS3-4" onclick="choiceS(4, 3)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR3" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(3)">
+        <div class="dropDownStyle dropDownR3">
+          <div class="item" id="itemR3-1" onclick="choiceR(1, 3)">6 a 8 reps</div>
+          <div class="item" id="itemR3-2" onclick="choiceR(2, 3)">8 a 10 reps</div>
+          <div class="item" id="itemR3-3" onclick="choiceR(3, 3)">10 a 12 reps</div>
+          <div class="item" id="itemR3-4" onclick="choiceR(4, 3)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(3)" class="styleDesfazer divDesfazer3">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(3)" class="btnStyle btn3 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD4 -->
+    <div class="containerCard">
+      <div class="cardStyle card4 efeitoCard" onclick="selectCard(4)">
+        <img class="imgStyle imgCardC4" src="../assets/exercicios-peito/crucifixo-reto-cabo.gif">
+        <p class="caption cap4">Crucifixo Reto (Cabo)</p>
+      </div>
+      <div class="container4">
+        <input class="inputStyle inputS4" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(4)">
+        <div class="dropDownStyle dropDownS4">
+          <div class="item" id="itemS4-1" onclick="choiceS(1, 4)">3 Séries</div>
+          <div class="item" id="itemS4-2" onclick="choiceS(2, 4)">4 Séries</div>
+          <div class="item" id="itemS4-3" onclick="choiceS(3, 4)">5 Séries</div>
+          <div class="item" id="itemS4-4" onclick="choiceS(4, 4)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR4" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(4)">
+        <div class="dropDownStyle dropDownR4">
+          <div class="item" id="itemR4-1" onclick="choiceR(1, 4)">6 a 8 reps</div>
+          <div class="item" id="itemR4-2" onclick="choiceR(2, 4)">8 a 10 reps</div>
+          <div class="item" id="itemR4-3" onclick="choiceR(3, 4)">10 a 12 reps</div>
+          <div class="item" id="itemR4-4" onclick="choiceR(4, 4)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(4)" class="styleDesfazer divDesfazer4">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(4)" class="btnStyle btn4 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD5 -->
+    <div class="containerCard">
+      <div class="cardStyle card5 efeitoCard" onclick="selectCard(5)">
+        <img class="imgStyle imgCardC5" src="../assets/exercicios-peito/crucifixo-reto-halter.gif">
+        <p class="caption cap5">Crucifixo Reto (Halter)</p>
+      </div>
+      <div class="container5">
+        <input class="inputStyle inputS5" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(5)">
+        <div class="dropDownStyle dropDownS5">
+          <div class="item" id="itemS5-1" onclick="choiceS(1, 5)">3 Séries</div>
+          <div class="item" id="itemS5-2" onclick="choiceS(2, 5)">4 Séries</div>
+          <div class="item" id="itemS5-3" onclick="choiceS(3, 5)">5 Séries</div>
+          <div class="item" id="itemS5-4" onclick="choiceS(4, 5)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR5" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(5)">
+        <div class="dropDownStyle dropDownR5">
+          <div class="item" id="itemR5-1" onclick="choiceR(1, 5)">6 a 8 reps</div>
+          <div class="item" id="itemR5-2" onclick="choiceR(2, 5)">8 a 10 reps</div>
+          <div class="item" id="itemR5-3" onclick="choiceR(3, 5)">10 a 12 reps</div>
+          <div class="item" id="itemR5-4" onclick="choiceR(4, 5)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(5)" class="styleDesfazer divDesfazer5">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(5)" class="btnStyle btn5 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD6 -->
+    <div class="containerCard">
+      <div class="cardStyle card6 efeitoCard" onclick="selectCard(6)">
+        <img class="imgStyle imgCardC6" src="../assets/exercicios-peito/flexao-aberta.gif">
+        <p class="caption cap6">Flexão Aberta</p>
+      </div>
+      <div class="container6">
+        <input class="inputStyle inputS6" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(6)">
+        <div class="dropDownStyle dropDownS6">
+          <div class="item" id="itemS6-1" onclick="choiceS(1, 6)">3 Séries</div>
+          <div class="item" id="itemS6-2" onclick="choiceS(2, 6)">4 Séries</div>
+          <div class="item" id="itemS6-3" onclick="choiceS(3, 6)">5 Séries</div>
+          <div class="item" id="itemS6-4" onclick="choiceS(4, 6)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR6" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(6)">
+        <div class="dropDownStyle dropDownR6">
+          <div class="item" id="itemR6-1" onclick="choiceR(1, 6)">6 a 8 reps</div>
+          <div class="item" id="itemR6-2" onclick="choiceR(2, 6)">8 a 10 reps</div>
+          <div class="item" id="itemR6-3" onclick="choiceR(3, 6)">10 a 12 reps</div>
+          <div class="item" id="itemR6-4" onclick="choiceR(4, 6)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(6)" class="styleDesfazer divDesfazer6">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(6)" class="btnStyle btn6 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD7 -->
+    <div class="containerCard">
+      <div class="cardStyle card7 efeitoCard" onclick="selectCard(7)">
+        <img class="imgStyle imgCardC7" src="../assets/exercicios-peito/paralela.gif">
+        <p class="caption cap7">Paralela</p>
+      </div>
+      <div class="container7">
+        <input class="inputStyle inputS7" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(7)">
+        <div class="dropDownStyle dropDownS7">
+          <div class="item" id="itemS7-1" onclick="choiceS(1, 7)">3 Séries</div>
+          <div class="item" id="itemS7-2" onclick="choiceS(2, 7)">4 Séries</div>
+          <div class="item" id="itemS7-3" onclick="choiceS(3, 7)">5 Séries</div>
+          <div class="item" id="itemS7-4" onclick="choiceS(4, 7)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR7" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(7)">
+        <div class="dropDownStyle dropDownR7">
+          <div class="item" id="itemR7-1" onclick="choiceR(1, 7)">6 a 8 reps</div>
+          <div class="item" id="itemR7-2" onclick="choiceR(2, 7)">8 a 10 reps</div>
+          <div class="item" id="itemR7-3" onclick="choiceR(3, 7)">10 a 12 reps</div>
+          <div class="item" id="itemR7-4" onclick="choiceR(4, 7)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(7)" class="styleDesfazer divDesfazer7">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(7)" class="btnStyle btn7 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD8 -->
+    <div class="containerCard">
+      <div class="cardStyle card8 efeitoCard" onclick="selectCard(8)">
+        <img class="imgStyle imgCardC8" src="../assets/exercicios-peito/pullover-halter.gif">
+        <p class="caption cap8">Pullover (Halter)</p>
+      </div>
+      <div class="container8">
+        <input class="inputStyle inputS8" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(8)">
+        <div class="dropDownStyle dropDownS8">
+          <div class="item" id="itemS8-1" onclick="choiceS(1, 8)">3 Séries</div>
+          <div class="item" id="itemS8-2" onclick="choiceS(2, 8)">4 Séries</div>
+          <div class="item" id="itemS8-3" onclick="choiceS(3, 8)">5 Séries</div>
+          <div class="item" id="itemS8-4" onclick="choiceS(4, 8)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR8" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(8)">
+        <div class="dropDownStyle dropDownR8">
+          <div class="item" id="itemR8-1" onclick="choiceR(1, 8)">6 a 8 reps</div>
+          <div class="item" id="itemR8-2" onclick="choiceR(2, 8)">8 a 10 reps</div>
+          <div class="item" id="itemR8-3" onclick="choiceR(3, 8)">10 a 12 reps</div>
+          <div class="item" id="itemR8-4" onclick="choiceR(4, 8)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(8)" class="styleDesfazer divDesfazer8">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(8)" class="btnStyle btn8 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD9 -->
+    <div class="containerCard">
+      <div class="cardStyle card9 efeitoCard" onclick="selectCard(9)">
+        <img class="imgStyle imgCardC9" src="../assets/exercicios-peito/supino-declinado.gif">
+        <p class="caption cap9">Supino Declinado</p>
+      </div>
+      <div class="container9">
+        <input class="inputStyle inputS9" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(9)">
+        <div class="dropDownStyle dropDownS9">
+          <div class="item" id="itemS9-1" onclick="choiceS(1, 9)">3 Séries</div>
+          <div class="item" id="itemS9-2" onclick="choiceS(2, 9)">4 Séries</div>
+          <div class="item" id="itemS9-3" onclick="choiceS(3, 9)">5 Séries</div>
+          <div class="item" id="itemS9-4" onclick="choiceS(4, 9)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR9" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(9)">
+        <div class="dropDownStyle dropDownR9">
+          <div class="item" id="itemR9-1" onclick="choiceR(1, 9)">6 a 8 reps</div>
+          <div class="item" id="itemR9-2" onclick="choiceR(2, 9)">8 a 10 reps</div>
+          <div class="item" id="itemR9-3" onclick="choiceR(3, 9)">10 a 12 reps</div>
+          <div class="item" id="itemR9-4" onclick="choiceR(4, 9)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(9)" class="styleDesfazer divDesfazer9">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(9)" class="btnStyle btn9 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD10 -->
+    <div class="containerCard">
+      <div class="cardStyle card10 efeitoCard" onclick="selectCard(10)">
+        <img class="imgStyle imgCardC10" src="../assets/exercicios-peito/supino-declinado-halter.gif">
+        <p class="caption cap10">Supino Declinado (Halter)</p>
+      </div>
+      <div class="container10">
+        <input class="inputStyle inputS10" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(10)">
+        <div class="dropDownStyle dropDownS10">
+          <div class="item" id="itemS10-1" onclick="choiceS(1, 10)">3 Séries</div>
+          <div class="item" id="itemS10-2" onclick="choiceS(2, 10)">4 Séries</div>
+          <div class="item" id="itemS10-3" onclick="choiceS(3, 10)">5 Séries</div>
+          <div class="item" id="itemS10-4" onclick="choiceS(4, 10)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR10" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(10)">
+        <div class="dropDownStyle dropDownR10">
+          <div class="item" id="itemR10-1" onclick="choiceR(1, 10)">6 a 8 reps</div>
+          <div class="item" id="itemR10-2" onclick="choiceR(2, 10)">8 a 10 reps</div>
+          <div class="item" id="itemR10-3" onclick="choiceR(3, 10)">10 a 12 reps</div>
+          <div class="item" id="itemR10-4" onclick="choiceR(4, 10)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(10)" class="styleDesfazer divDesfazer10">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(10)" class="btnStyle btn10 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD11 -->
+    <div class="containerCard">
+      <div class="cardStyle card11 efeitoCard" onclick="selectCard(11)">
+        <img class="imgStyle imgCardC11" src="../assets/exercicios-peito/supino-inclinado.gif">
+        <p class="caption cap11">Supino Inclinado</p>
+      </div>
+      <div class="container11">
+        <input class="inputStyle inputS11" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(11)">
+        <div class="dropDownStyle dropDownS11">
+          <div class="item" id="itemS11-1" onclick="choiceS(1, 11)">3 Séries</div>
+          <div class="item" id="itemS11-2" onclick="choiceS(2, 11)">4 Séries</div>
+          <div class="item" id="itemS11-3" onclick="choiceS(3, 11)">5 Séries</div>
+          <div class="item" id="itemS11-4" onclick="choiceS(4, 11)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR11" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(11)">
+        <div class="dropDownStyle dropDownR11">
+          <div class="item" id="itemR11-1" onclick="choiceR(1, 11)">6 a 8 reps</div>
+          <div class="item" id="itemR11-2" onclick="choiceR(2, 11)">8 a 10 reps</div>
+          <div class="item" id="itemR11-3" onclick="choiceR(3, 11)">10 a 12 reps</div>
+          <div class="item" id="itemR11-4" onclick="choiceR(4, 11)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(11)" class="styleDesfazer divDesfazer11">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(11)" class="btnStyle btn11 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD12 -->
+    <div class="containerCard">
+      <div class="cardStyle card12 efeitoCard" onclick="selectCard(12)">
+        <img class="imgStyle imgCardC12" src="../assets/exercicios-peito/supino-inclinado-aparelho.gif">
+        <p class="caption cap12">Supino Inclinado (Aparelho)</p>
+      </div>
+      <div class="container12">
+        <input class="inputStyle inputS12" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(12)">
+        <div class="dropDownStyle dropDownS12">
+          <div class="item" id="itemS12-1" onclick="choiceS(1, 12)">3 Séries</div>
+          <div class="item" id="itemS12-2" onclick="choiceS(2, 12)">4 Séries</div>
+          <div class="item" id="itemS12-3" onclick="choiceS(3, 12)">5 Séries</div>
+          <div class="item" id="itemS12-4" onclick="choiceS(4, 12)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR12" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(12)">
+        <div class="dropDownStyle dropDownR12">
+          <div class="item" id="itemR12-1" onclick="choiceR(1, 12)">6 a 8 reps</div>
+          <div class="item" id="itemR12-2" onclick="choiceR(2, 12)">8 a 10 reps</div>
+          <div class="item" id="itemR12-3" onclick="choiceR(3, 12)">10 a 12 reps</div>
+          <div class="item" id="itemR12-4" onclick="choiceR(4, 12)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(12)" class="styleDesfazer divDesfazer12">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(12)" class="btnStyle btn12 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD13 -->
+    <div class="containerCard">
+      <div class="cardStyle card13 efeitoCard" onclick="selectCard(13)">
+        <img class="imgStyle imgCardC13" src="../assets/exercicios-peito/supino-inclinado-halter.gif">
+        <p class="caption cap13">Supino Inclinado (Halter)</p>
+      </div>
+      <div class="container13">
+        <input class="inputStyle inputS13" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(13)">
+        <div class="dropDownStyle dropDownS13">
+          <div class="item" id="itemS13-1" onclick="choiceS(1, 13)">3 Séries</div>
+          <div class="item" id="itemS13-2" onclick="choiceS(2, 13)">4 Séries</div>
+          <div class="item" id="itemS13-3" onclick="choiceS(3, 13)">5 Séries</div>
+          <div class="item" id="itemS13-4" onclick="choiceS(4, 13)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR13" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(13)">
+        <div class="dropDownStyle dropDownR13">
+          <div class="item" id="itemR13-1" onclick="choiceR(1, 13)">6 a 8 reps</div>
+          <div class="item" id="itemR13-2" onclick="choiceR(2, 13)">8 a 10 reps</div>
+          <div class="item" id="itemR13-3" onclick="choiceR(3, 13)">10 a 12 reps</div>
+          <div class="item" id="itemR13-4" onclick="choiceR(4, 13)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(13)" class="styleDesfazer divDesfazer13">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(13)" class="btnStyle btn13 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD14 -->
+    <div class="containerCard">
+      <div class="cardStyle card14 efeitoCard" onclick="selectCard(14)">
+        <img class="imgStyle imgCardC14" src="../assets/exercicios-peito/supino-reto.gif">
+        <p class="caption cap14">Supino Reto</p>
+      </div>
+      <div class="container14">
+        <input class="inputStyle inputS14" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(14)">
+        <div class="dropDownStyle dropDownS14">
+          <div class="item" id="itemS14-1" onclick="choiceS(1, 14)">3 Séries</div>
+          <div class="item" id="itemS14-2" onclick="choiceS(2, 14)">4 Séries</div>
+          <div class="item" id="itemS14-3" onclick="choiceS(3, 14)">5 Séries</div>
+          <div class="item" id="itemS14-4" onclick="choiceS(4, 14)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR14" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(14)">
+        <div class="dropDownStyle dropDownR14">
+          <div class="item" id="itemR14-1" onclick="choiceR(1, 14)">6 a 8 reps</div>
+          <div class="item" id="itemR14-2" onclick="choiceR(2, 14)">8 a 10 reps</div>
+          <div class="item" id="itemR14-3" onclick="choiceR(3, 14)">10 a 12 reps</div>
+          <div class="item" id="itemR14-4" onclick="choiceR(4, 14)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(14)" class="styleDesfazer divDesfazer14">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(14)" class="btnStyle btn14 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD15 -->
+    <div class="containerCard">
+      <div class="cardStyle card15 efeitoCard" onclick="selectCard(15)">
+        <img class="imgStyle imgCardC15" src="../assets/exercicios-peito/supino-reto-cabo.gif">
+        <p class="caption cap15">Supino Reto (Cabo)</p>
+      </div>
+      <div class="container15">
+        <input class="inputStyle inputS15" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(15)">
+        <div class="dropDownStyle dropDownS15">
+          <div class="item" id="itemS15-1" onclick="choiceS(1, 15)">3 Séries</div>
+          <div class="item" id="itemS15-2" onclick="choiceS(2, 15)">4 Séries</div>
+          <div class="item" id="itemS15-3" onclick="choiceS(3, 15)">5 Séries</div>
+          <div class="item" id="itemS15-4" onclick="choiceS(4, 15)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR15" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(15)">
+        <div class="dropDownStyle dropDownR15">
+          <div class="item" id="itemR15-1" onclick="choiceR(1, 15)">6 a 8 reps</div>
+          <div class="item" id="itemR15-2" onclick="choiceR(2, 15)">8 a 10 reps</div>
+          <div class="item" id="itemR15-3" onclick="choiceR(3, 15)">10 a 12 reps</div>
+          <div class="item" id="itemR15-4" onclick="choiceR(4, 15)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(15)" class="styleDesfazer divDesfazer15">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(15)" class="btnStyle btn15 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD16 -->
+    <div class="containerCard">
+      <div class="cardStyle card16 efeitoCard" onclick="selectCard(16)">
+        <img class="imgStyle imgCardC16" src="../assets/exercicios-peito/supino-reto-halter.gif">
+        <p class="caption cap16">Supino Reto (Halter)</p>
+      </div>
+      <div class="container16">
+        <input class="inputStyle inputS16" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(16)">
+        <div class="dropDownStyle dropDownS16">
+          <div class="item" id="itemS16-1" onclick="choiceS(1, 16)">3 Séries</div>
+          <div class="item" id="itemS16-2" onclick="choiceS(2, 16)">4 Séries</div>
+          <div class="item" id="itemS16-3" onclick="choiceS(3, 16)">5 Séries</div>
+          <div class="item" id="itemS16-4" onclick="choiceS(4, 16)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR16" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(16)">
+        <div class="dropDownStyle dropDownR16">
+          <div class="item" id="itemR16-1" onclick="choiceR(1, 16)">6 a 8 reps</div>
+          <div class="item" id="itemR16-2" onclick="choiceR(2, 16)">8 a 10 reps</div>
+          <div class="item" id="itemR16-3" onclick="choiceR(3, 16)">10 a 12 reps</div>
+          <div class="item" id="itemR16-4" onclick="choiceR(4, 16)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(16)" class="styleDesfazer divDesfazer16">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(16)" class="btnStyle btn16 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD17 -->
+    <div class="containerCard">
+      <div class="cardStyle card17 efeitoCard" onclick="selectCard(17)">
+        <img class="imgStyle imgCardC17" src="../assets/exercicios-peito/supino-reto-pegada-aberta.gif">
+        <p class="caption cap17">Supino Reto (Pegada Aberta)</p>
+      </div>
+      <div class="container17">
+        <input class="inputStyle inputS17" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(17)">
+        <div class="dropDownStyle dropDownS17">
+          <div class="item" id="itemS17-1" onclick="choiceS(1, 17)">3 Séries</div>
+          <div class="item" id="itemS17-2" onclick="choiceS(2, 17)">4 Séries</div>
+          <div class="item" id="itemS17-3" onclick="choiceS(3, 17)">5 Séries</div>
+          <div class="item" id="itemS17-4" onclick="choiceS(4, 17)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR17" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(17)">
+        <div class="dropDownStyle dropDownR17">
+          <div class="item" id="itemR17-1" onclick="choiceR(1, 17)">6 a 8 reps</div>
+          <div class="item" id="itemR17-2" onclick="choiceR(2, 17)">8 a 10 reps</div>
+          <div class="item" id="itemR17-3" onclick="choiceR(3, 17)">10 a 12 reps</div>
+          <div class="item" id="itemR17-4" onclick="choiceR(4, 17)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(17)" class="styleDesfazer divDesfazer17">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(17)" class="btnStyle btn17 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD18-->
+    <div class="containerCard">
+      <div class="cardStyle card18 efeitoCard" onclick="selectCard(18)">
+        <img class="imgStyle imgCardC18" src="../assets/exercicios-peito/supino-vertical-aparelho.gif">
+        <p class="caption cap18">Supino Vertical (Aparelho)</p>
+      </div>
+      <div class="container18">
+        <input class="inputStyle inputS18" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(18)">
+        <div class="dropDownStyle dropDownS18">
+          <div class="item" id="itemS18-1" onclick="choiceS(1, 18)">3 Séries</div>
+          <div class="item" id="itemS18-2" onclick="choiceS(2, 18)">4 Séries</div>
+          <div class="item" id="itemS18-3" onclick="choiceS(3, 18)">5 Séries</div>
+          <div class="item" id="itemS18-4" onclick="choiceS(4, 18)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR18" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(18)">
+        <div class="dropDownStyle dropDownR18">
+          <div class="item" id="itemR18-1" onclick="choiceR(1, 18)">6 a 8 reps</div>
+          <div class="item" id="itemR18-2" onclick="choiceR(2, 18)">8 a 10 reps</div>
+          <div class="item" id="itemR18-3" onclick="choiceR(3, 18)">10 a 12 reps</div>
+          <div class="item" id="itemR18-4" onclick="choiceR(4, 18)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(18)" class="styleDesfazer divDesfazer18">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(18)" class="btnStyle btn18 btnDesabilitado" >Confirmar</button>
+    </div>
+    
+    <!-- CARD19 -->
+    <div class="containerCard">
+      <div class="cardStyle card19 efeitoCard" onclick="selectCard(19)">
+        <img class="imgStyle imgCardC19" src="../assets/exercicios-peito/supino-vertical-cabo.gif">
+        <p class="caption cap19">Supino Vertical (Cabo)</p>
+      </div>
+      <div class="container19">
+        <input class="inputStyle inputS19" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(19)">
+        <div class="dropDownStyle dropDownS19">
+          <div class="item" id="itemS19-1" onclick="choiceS(1, 19)">3 Séries</div>
+          <div class="item" id="itemS19-2" onclick="choiceS(2, 19)">4 Séries</div>
+          <div class="item" id="itemS19-3" onclick="choiceS(3, 19)">5 Séries</div>
+          <div class="item" id="itemS19-4" onclick="choiceS(4, 19)">6 Séries</div>
+        </div>
+      </div>
+      <div class="containerJoker">
+        <input class="inputStyle inputR19" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(19)">
+        <div class="dropDownStyle dropDownR19">
+          <div class="item" id="itemR19-1" onclick="choiceR(1, 19)">6 a 8 reps</div>
+          <div class="item" id="itemR19-2" onclick="choiceR(2, 19)">8 a 10 reps</div>
+          <div class="item" id="itemR19-3" onclick="choiceR(3, 19)">10 a 12 reps</div>
+          <div class="item" id="itemR19-4" onclick="choiceR(4, 19)">Até a falha</div>
+        </div>
+      </div>
+      <div onclick="clickBtnDesfazer(19)" class="styleDesfazer divDesfazer19">
+        <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+      </div>
+      <button disabled="" onclick="clickBtn(19)" class="btnStyle btn19 btnDesabilitado" >Confirmar</button>
+    </div>
+
+    <!-- CARD20 -->
+    <div class="containerCard">
+        <div class="cardStyle card20 efeitoCard" onclick="selectCard(20)">
+          <img class="imgStyle imgCardC20" src="../assets/exercicios-peito/voador-curvado-em-pe-cabo.gif">
+          <p class="caption cap20">Voador Curvado Em Pé (Cabo)</p>
+        </div>
+        <div class="container20">
+          <input class="inputStyle inputS20" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(20)">
+          <div class="dropDownStyle dropDownS20">
+            <div class="item" id="itemS20-1" onclick="choiceS(1, 20)">3 Séries</div>
+            <div class="item" id="itemS20-2" onclick="choiceS(2, 20)">4 Séries</div>
+            <div class="item" id="itemS20-3" onclick="choiceS(3, 20)">5 Séries</div>
+            <div class="item" id="itemS20-4" onclick="choiceS(4, 20)">6 Séries</div>
+          </div>
+        </div>
+        <div class="containerJoker">
+          <input class="inputStyle inputR20" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(20)">
+          <div class="dropDownStyle dropDownR20">
+            <div class="item" id="itemR20-1" onclick="choiceR(1, 20)">6 a 8 reps</div>
+            <div class="item" id="itemR20-2" onclick="choiceR(2, 20)">8 a 10 reps</div>
+            <div class="item" id="itemR20-3" onclick="choiceR(3, 20)">10 a 12 reps</div>
+            <div class="item" id="itemR20-4" onclick="choiceR(4, 20)">Até a falha</div>
+          </div>
+        </div>
+        <div onclick="clickBtnDesfazer(20)" class="styleDesfazer divDesfazer20">
+          <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+        </div>
+        <button disabled="" onclick="clickBtn(20)" class="btnStyle btn20 btnDesabilitado" >Confirmar</button>
+      </div>
+
+      <!-- CARD21 -->
+    <div class="containerCard">
+        <div class="cardStyle card21 efeitoCard" onclick="selectCard(21)">
+          <img class="imgStyle imgCardC21" src="../assets/exercicios-peito/voador-em-pe-cabo.gif">
+          <p class="caption cap21">Voador Em Pé (Cabo)</p>
+        </div>
+        <div class="container21">
+          <input class="inputStyle inputS21" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(21)">
+          <div class="dropDownStyle dropDownS21">
+            <div class="item" id="itemS21-1" onclick="choiceS(1, 21)">3 Séries</div>
+            <div class="item" id="itemS21-2" onclick="choiceS(2, 21)">4 Séries</div>
+            <div class="item" id="itemS21-3" onclick="choiceS(3, 21)">5 Séries</div>
+            <div class="item" id="itemS21-4" onclick="choiceS(4, 21)">6 Séries</div>
+          </div>
+        </div>
+        <div class="containerJoker">
+          <input class="inputStyle inputR21" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(21)">
+          <div class="dropDownStyle dropDownR21">
+            <div class="item" id="itemR21-1" onclick="choiceR(1, 21)">6 a 8 reps</div>
+            <div class="item" id="itemR21-2" onclick="choiceR(2, 21)">8 a 10 reps</div>
+            <div class="item" id="itemR21-3" onclick="choiceR(3, 21)">10 a 12 reps</div>
+            <div class="item" id="itemR21-4" onclick="choiceR(4, 21)">Até a falha</div>
+          </div>
+        </div>
+        <div onclick="clickBtnDesfazer(21)" class="styleDesfazer divDesfazer21">
+          <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+        </div>
+        <button disabled="" onclick="clickBtn(21)" class="btnStyle btn21 btnDesabilitado" >Confirmar</button>
+      </div>
+
+      <!-- CARD22 -->
+    <div class="containerCard">
+        <div class="cardStyle card22 efeitoCard" onclick="selectCard(22)">
+          <img class="imgStyle imgCardC22" src="../assets/exercicios-peito/voador-peitoral.gif">
+          <p class="caption cap22">Voador Peitoral</p>
+        </div>
+        <div class="container22">
+          <input class="inputStyle inputS22" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(22)">
+          <div class="dropDownStyle dropDownS22">
+            <div class="item" id="itemS22-1" onclick="choiceS(1, 22)">3 Séries</div>
+            <div class="item" id="itemS22-2" onclick="choiceS(2, 22)">4 Séries</div>
+            <div class="item" id="itemS22-3" onclick="choiceS(3, 22)">5 Séries</div>
+            <div class="item" id="itemS22-4" onclick="choiceS(4, 22)">6 Séries</div>
+          </div>
+        </div>
+        <div class="containerJoker">
+          <input class="inputStyle inputR22" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(22)">
+          <div class="dropDownStyle dropDownR22">
+            <div class="item" id="itemR22-1" onclick="choiceR(1, 22)">6 a 8 reps</div>
+            <div class="item" id="itemR22-2" onclick="choiceR(2, 22)">8 a 10 reps</div>
+            <div class="item" id="itemR22-3" onclick="choiceR(3, 22)">10 a 12 reps</div>
+            <div class="item" id="itemR22-4" onclick="choiceR(4, 22)">Até a falha</div>
+          </div>
+        </div>
+        <div onclick="clickBtnDesfazer(22)" class="styleDesfazer divDesfazer22">
+          <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+        </div>
+        <button disabled="" onclick="clickBtn(22)" class="btnStyle btn22 btnDesabilitado" >Confirmar</button>
+      </div>
+
+      <!-- CARD23 -->
+    <div class="containerCard">
+        <div class="cardStyle card23 efeitoCard" onclick="selectCard(23)">
+          <img class="imgStyle imgCardC23" src="../assets/exercicios-peito/voador-peitoral-pegada-aberta.gif">
+          <p class="caption cap23">Voador Peitoral (Pegada Aberta)</p>
+        </div>
+        <div class="container23">
+          <input class="inputStyle inputS23" type="text" name="reps" placeholder="Qnt de séries" readonly="" onclick="revelandoInputS(23)">
+          <div class="dropDownStyle dropDownS23">
+            <div class="item" id="itemS23-1" onclick="choiceS(1, 23)">3 Séries</div>
+            <div class="item" id="itemS23-2" onclick="choiceS(2, 23)">4 Séries</div>
+            <div class="item" id="itemS23-3" onclick="choiceS(3, 23)">5 Séries</div>
+            <div class="item" id="itemS23-4" onclick="choiceS(4, 23)">6 Séries</div>
+          </div>
+        </div>
+        <div class="containerJoker">
+          <input class="inputStyle inputR23" type="text" name="reps" placeholder="Qnt de reps" readonly="" onclick="revelandoInputR(23)">
+          <div class="dropDownStyle dropDownR23">
+            <div class="item" id="itemR23-1" onclick="choiceR(1, 23)">6 a 8 reps</div>
+            <div class="item" id="itemR23-2" onclick="choiceR(2, 23)">8 a 10 reps</div>
+            <div class="item" id="itemR23-3" onclick="choiceR(3, 23)">10 a 12 reps</div>
+            <div class="item" id="itemR23-4" onclick="choiceR(4, 23)">Até a falha</div>
+          </div>
+        </div>
+        <div onclick="clickBtnDesfazer(23)" class="styleDesfazer divDesfazer23">
+          <img src="../assets/img/desfazer.png" class="styleImgDesfazer">
+        </div>
+        <button disabled="" onclick="clickBtn(23)" class="btnStyle btn23 btnDesabilitado" >Confirmar</button>
+      </div>
+  
+  </div>
+  <div class="menu-rodape">
+    <div onclick="salvarTreino()" id="btn" class="div-btn-rodape disabled">
+      <img src="../assets/img/approved.png" class="save">
+      <div class="btn-rodape btn-save">Salvar Treino</div>
+    </div>
+  </div>
+  <script src="../assets/js/exercicios.js"></script>
+</body>
+</html>
