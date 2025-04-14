@@ -184,6 +184,9 @@ function clickBtnDesfazer(n) {
 
     inputS.value = "";
     inputR.value = "";
+    btn.disabled = true;
+    btn.classList.remove("btnActive");
+    btn.classList.add("btnDesabilitado");
     btnDesfazer.style.display = "none";
     card.style.opacity = "1";
     card.classList.remove("cardComCheck", "::before");
