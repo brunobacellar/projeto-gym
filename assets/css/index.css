@@ -1,18 +1,7 @@
-body {
-  height: 100%;
-  width: 100vw;
-  padding-bottom: 80px;
-  background: linear-gradient(to right, #87ceeb, #317692);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 .div-blur {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(to right, #87ceeb, #317692);
   z-index: 1;
 }
@@ -56,6 +45,7 @@ body {
   border-radius: 10px 10px 0 10px;
   background-color: #ffd00092;
   box-shadow: 2px 2px 5px black;
+  transition: transform 0.3s ease-in-out;
 }
 
 .img-info:active {
@@ -112,6 +102,7 @@ body {
   border-radius: 3px;
   color: black;
   box-shadow: 2px 2px 4px black;
+  transition: transform 0.3s ease-in-out;
 }
 
 .img-dia {
@@ -206,7 +197,7 @@ body {
   height: 200px;
   margin-top: 25px;
   box-shadow: 3px 3px 6px black;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .cardStyleTreino {
@@ -267,19 +258,13 @@ body {
 }
 
 .h1-login {
-  color: #000;
-  line-height: 22px;
-  font-size: 18px;
-  text-align: center;
-  margin: 20px 0 10px 0;
-  font-weight: 700;
-}
-
-.frango {
   color: #ff5722;
-  font-weight: 900;
+  line-height: 22px;
   font-size: 20px;
+  text-align: center;
   text-shadow: 1px 1px 3px #fff;
+  margin: 20px 0 10px 0;
+  font-weight: 900;
 }
 
 .h2-login {
@@ -310,6 +295,10 @@ body {
   gap: 5px;
 }
 
+.checked {
+  transition: transform 0.3s ease-in-out;
+}
+
 .termo {
   font-size: 10px;
   color: #333;
@@ -325,6 +314,7 @@ body {
   border-radius: 5px;
   box-shadow: 2px 2px 4px black;
   font-weight: 700;
+  transition: transform 0.3s ease-in-out;
 }
 
 .btn-confirmar-disabled {
@@ -380,6 +370,7 @@ body {
   border-radius: 5px;
   box-shadow: 2px 2px 4px black;
   font-weight: 700;
+  transition: transform 0.3s ease-in-out;
 }
 
 .divTesteira {
@@ -428,6 +419,7 @@ body {
   justify-content: center;
   gap: 15px;
   width: 100%;
+  max-width: 480px;
   padding: 10px 0;
   background-color: #333;
   border-top: 2px solid black;
@@ -443,11 +435,12 @@ body {
   font-weight: 600;
   color: black;
   padding: 10px;
-  width: 40vw;
+  width: 40%;
   border-radius: 5px;
   gap: 9px;
   box-shadow: 2px 2px 4px black;
   border: 2px solid black;
+  transition: transform 0.3s ease-in-out;
 }
 
 .disabled {
@@ -510,3 +503,14 @@ body {
   font-weight: 700;
   margin-top: 25px;
 }
+
+.img-info:hover,
+.dia:hover,
+.checked:hover,
+.btn-confirmar:hover,
+.cardStyleTreino:hover,
+.div-btn-rodape-desfazer:hover,
+.btnConfirmRest:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+ }
